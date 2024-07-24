@@ -1,0 +1,183 @@
+/* Global view */
+
+body,html {
+  height: 100%;
+  display: grid;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  max-width: 1440px;
+  font-family: "Figtree", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.wrapper {
+  background-color: white;
+  border-color: #111111;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 20px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.497);
+  margin: auto;
+  width: 25%;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+}
+
+.headerImage {
+  border-radius: 10px;
+  width: 100%;
+  margin: auto;
+}
+
+.category {
+  margin: 20px 0;
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  display: inline-block;
+  font-weight: 800;
+  font-size: 16px;
+  color: hsl(0, 0%, 7%);
+}
+
+.date {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+}
+
+h1:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+p {
+  color:hsl(0, 0%, 42%);
+  font-size: 16px;
+}
+
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.authorImage {
+  width: 10%;
+  margin-right: 10px;
+}
+
+.authorName {
+  font-weight: 800;
+  font-size: 12px;
+  color: hsl(0, 0%, 7%);
+  
+}
+
+/* Tablet view, Landscape and Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .category {
+      font-size:14px ;
+      padding: 6px;
+    }
+    h1 {
+      font-size: 20px;
+    }
+
+    .date {
+      font-size:14 px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+
+    .authorName {
+      font-size: 10px;
+    }
+
+}
+
+/* Mobile view, Landscape and Portrait */
+@media only screen 
+  and (min-device-width: 480px) 
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .category {
+      font-size:12px;
+      padding: 6px;
+    }
+    h1 {
+      font-size: 18px;
+    }
+
+    .date {
+      font-size: 12px;
+    }
+
+  
+    p {
+      font-size: 12px;
+    }
+    .authorImage {
+      margin-right: 5px;
+    }
+
+    .authorName {
+      font-size: 8px;
+    }
+
+  }
+
+
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+
+  .category {
+    font-size:10px ;
+  }
+  h1 {
+    font-size: 16px;
+  }
+
+  p {
+    font-size: 10px;
+  }
+
+  .date {
+    font-size: 10px;
+  }
+
+  .authorImage {
+    margin-right: 4px;
+  }
+
+  .authorName {
+    font-size: 6px;
+  }
+
+}
+
+
+
