@@ -92,25 +92,10 @@ footer {
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
-    .category {
-      font-size:14px ;
-      padding: 6px;
+    .wrapper {
+      width: 33%;
     }
-    h1 {
-      font-size: 20px;
-    }
-
-    .date {
-      font-size:14 px;
-    }
-  
-    p {
-      font-size: 14px;
-    }
-
-    .authorName {
-      font-size: 10px;
-    }
+    
 
 }
 
@@ -120,64 +105,21 @@ footer {
   and (max-device-width: 768px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
-    .category {
-      font-size:12px;
-      padding: 6px;
-    }
-    h1 {
-      font-size: 18px;
-    }
-
-    .date {
-      font-size: 12px;
-    }
-
-  
-    p {
-      font-size: 12px;
-    }
-    .authorImage {
-      margin-right: 5px;
-    }
-
-    .authorName {
-      font-size: 8px;
-    }
-
-  }
-
-
-
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    
-
-  .category {
-    font-size:10px ;
-  }
-  h1 {
-    font-size: 16px;
-  }
-
-  p {
-    font-size: 10px;
-  }
-
-  .date {
-    font-size: 10px;
-  }
-
-  .authorImage {
-    margin-right: 4px;
-  }
-
-  .authorName {
-    font-size: 6px;
-  }
+ .wrapper {
+  width: 50%;
+ }
 
 }
 
 
 
+@media only screen 
+  and (min-device-width: 300px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+
+  .wrapper {
+  width: 75%;
+  }
+}
